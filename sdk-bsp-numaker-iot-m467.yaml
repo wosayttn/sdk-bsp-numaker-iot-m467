@@ -1,0 +1,128 @@
+board:
+  buy_url_cn: https://direct.nuvoton.com/tw/numaker-iot-m467
+  buy_url_global: https://direct.nuvoton.com/tw/numaker-iot-m467
+  debug_interface: SWD
+  debugger: NU-LINK
+  description_en: NuMaker-IoT-M467 provides multiple networking, interfaces, and flexible extended data storage. 
+    Whether you need a sensor node or a light-weight gateway, the NuMaker-IoT-M467 is an ideal choice for IoT applications.
+    The M467HJ target board is based on NuMicro M467HJHAN. For the development flexibility, the M467HJ target board provides the extension connectors, 
+    the Arduino UNO, mikroBUS compatible headers and the capability of adopting multiple power supplies.
+    The NuMaker-IoT-M467 is an evaluation board for Nuvoton NuMicro M467HJ microcontrollers.
+    The NuMaker-IoT-M467 consists of two parts, an M467HJ target board and an on-board Nu-Link2-Me debugger and programmer.
+    The NuMaker-IoT-M467 is designed for project evaluation, prototype development and validation with power consumption monitoring function.
+  description_zh: 物联网应用广泛，从基础的端点到网关再到云端，之间需要控制、连网与加密等技术。
+    新唐科技推出适合物联网使用之 NuMaker-IoT-M467 开发板，以 NuMicro M467 系列微控制器为主控核心，
+    内建 RJ45 以太网络与 Wi-Fi 模块，让用户可以有线或无线的方式连接云端，以符合各种应用场景需求；
+    配合 NuMicro M467 系列微控制器内建的加解密加速器，提高加密网络联机的效率。
+    NuMaker-IoT-M467 目标板带有 NuMicro M467HJHAN 微控制器，提供兼容于 Arduino UNO 与 mikroBUS™ 接口，
+    方便搭配各式接口设备或 Arduino 模块，并有多种的电源供应设计，让项目的开发更加灵活，
+    可与 GPIO、UART、ADC、PWM、SPI 或 I2C 等接口连接；外挂 SPI Flash 及提供 microSD 卡插槽，增加额外的数据存取空间。
+  emulator_machine: ''
+  large_image: documents/images/large.png
+  name: NUMAKER-IOT-M467
+  price_cn: 127 CNY
+  price_global: 20 USD
+  sale_contact_cn: https://www.nuvoton.com
+  sale_contact_global: https://www.nuvoton.com
+  small_image: documents/images/small.png
+  vendor: Nuvoton
+  version: v1.0
+chip:
+  chip_name: M467HJHAN
+  clock_source: HXT
+  device_vendor: Nuvoton
+  family_name: NuMicro
+  rx_name: PB12
+  series_name: M460
+  source_freq: '12000000'
+  sub_series_name: M467HJ
+  target_freq: '192000000'
+  tx_name: PB13
+  uart_name: UART0
+docs: []
+example_projects: []
+features:
+- 192MHz CPU frequency
+- 1MB internal FLASH
+- 512KB SRAM
+- External FLASH：W25Q32 (SPI，4MB)
+- 3 LEDs
+- 3 Button
+- Thermal Sensor
+- 6-axis MotionTracking Sensor
+- Wi-Fi
+- Arduino UNO Compatible Interface
+- USB to TTL function
+- RJ-45 Connector
+- USB 1.1 OTG
+- USB 2.0 OTG
+- TF card Connector
+- Nu-Link-Me
+features_zh:
+- 192MHz 主频
+- 1MB internal FLASH
+- 512KB SRAM
+- 外部 FLASH：W25Q32 (SPI，4MB)
+- NAU88C22 Audio Codec
+- 3 LEDs
+- 3 Buttons
+- Thermal Sensor
+- 6-axis MotionTracking Sensor
+- Wi-Fi
+- Arduino UNO Compatible Interface
+- USB 转串口
+- RJ-45 接口
+- USB 1.1 OTG
+- USB 2.0 OTG
+- TF card 接口
+- Nu-Link-Me
+pkg_type: Board_Support_Packages
+pkg_vendor: Nuvoton
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .settings
+    - .cproject
+    - .config
+    - .project
+    - SConstruct
+    - linking_scripts
+    - rtconfig_preinc.h
+    - Kconfig
+    - applications
+    - makefile.targets
+    - board
+    - README.md
+    - cconfig.h
+    - rtconfig.h
+    - SConscript
+    - libraries
+    - rt-thread
+    - packages
+    - rtconfig.py
+    - template.uvprojx
+    - template.ewp
+    - template.eww
+    - template.ewd
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - package_type: ToolChain_Support_Packages
+    package_name: GNU_Tools_for_ARM_Embedded_Processors
+    package_vendor: 'ARM'
+    package_version: 6.3.1
+    source_path_offset: ''
+    target_path_offset: ''
+    files_and_folders: []    
+  - package_type: Debugger_Support_Packages
+    package_name: OpenOCD-Nuvoton
+    package_vendor: 'Nuvoton'
+    package_version: 1.0.2
+    source_path_offset: ''
+    target_path_offset: ''
+    files_and_folders: []
+  project_description: ''
+  project_name: numaker-iot-m467
+  project_type: rt-thread|@full|@notUsed
+yaml_version: 3
